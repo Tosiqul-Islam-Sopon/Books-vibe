@@ -2,6 +2,10 @@
 import { useParams } from "react-router-dom";
 
 import { useLoaderData } from "react-router-dom";
+import { getStoredBooks, saveBooksToStorage } from "../Utility/LocalStorage";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
     const id = useParams();
@@ -10,8 +14,35 @@ const BookDetails = () => {
 
     const book = books.find(data => data.bookId === parseInt(id.id));
 
-    const { bookName, author, image, review, totalPages, rating,
+    const {bookId, bookName, author, image, review, totalPages, rating,
         category, tags, publisher, yearOfPublishing } = book;
+
+    const handleAddToRead = (id) =>{
+        const storedReadBooks = getStoredBooks("read-books");
+        if (storedReadBooks.includes(id)){
+            toast("Already in read list");
+        }
+        else{
+            toast("Added in read list");
+            saveBooksToStorage("read-books", id);
+        }
+    }
+
+    const handleAddToWishlist = (id) =>{
+        const storedReadBooks = getStoredBooks("read-books");
+        const storedWishBooks = getStoredBooks("wishlist");
+        if (storedReadBooks.includes(id)){
+            toast("Already in read list");
+        }
+        else if (storedWishBooks.includes(id)){
+            toast("Already in wishlist");
+        }
+        else{
+            toast("Added in wishlist");
+            saveBooksToStorage("wishlist",id);
+        }
+    }
+
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure><img src={image} alt="Album" /></figure>
@@ -38,10 +69,11 @@ const BookDetails = () => {
                     <p>Rating : <span>{rating}</span></p>
                 </div>
                 <div className="flex gap-4 mt-5">
-                    <button className="btn bg-transparent border border-gray-300 px-6 font-semibold work hover:bg-[#23BE0A]">Read</button>
-                    <button className="btn bg-[#59C6D2] px-6 text-white font-semibold work hover:bg-[#23BE0A]">Wishlist</button>
+                    <button onClick={() => handleAddToRead(bookId)} className="btn bg-transparent border border-gray-300 px-6 font-semibold work hover:bg-[#23BE0A]">Read</button>
+                    <button onClick={() => handleAddToWishlist(bookId)} className="btn bg-[#59C6D2] px-6 text-white font-semibold work hover:bg-[#23BE0A]">Wishlist</button>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };
