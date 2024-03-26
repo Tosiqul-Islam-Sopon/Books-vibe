@@ -1,0 +1,104 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/n3SNJHj/897443-3242.jpg",
+        "review": "A timeless classic that explores important themes of racism and morality.",
+        "totalPages": 281,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Coming-of-age",
+            "Racism",
+            "Legal drama"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/WnSCMFP/1048629-5005.jpg",
+        "review": "A dystopian novel that remains disturbingly relevant in today's society.",
+        "totalPages": 328,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Dystopian",
+            "Totalitarianism",
+            "Political satire"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/XjM81Zm/1186913-2770.jpg",
+        "review": "A brilliant portrayal of the Jazz Age and the American Dream.",
+        "totalPages": 180,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "Roaring Twenties",
+            "Social class",
+            "Tragic love story"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 4,
+        "bookName": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://i.ibb.co/S7v8spd/1402605-105.jpg",
+        "review": "A captivating fantasy adventure that introduces readers to the magical world of Hogwarts.",
+        "totalPages": 309,
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Friendship",
+            "Wizardry"
+        ],
+        "publisher": "Bloomsbury",
+        "yearOfPublishing": 1997
+    },
+    {
+        "bookId": 5,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/rm6MKqJ/3774219-17028.jpg",
+        "review": "A witty and romantic novel that explores themes of love, class, and societal expectations.",
+        "totalPages": 279,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Regency era",
+            "Social commentary"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 6,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/PgxGdCZ/9355861-3608.jpg",
+        "review": "An iconic coming-of-age novel that captures the angst and alienation of adolescence.",
+        "totalPages": 277,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Coming-of-age",
+            "Alienation",
+            "Identity"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    }
+]

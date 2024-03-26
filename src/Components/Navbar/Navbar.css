@@ -1,0 +1,26 @@
+/* a.active{
+    color: #23BE0A;
+    border: 2px solid #23BE0A;
+} */
+.is-active {
+    background-color: #ffffff;
+    border: 2px solid #23BE0A;
+    color: #23BE0A;
+    font-weight: 500;
+}
+
+.is-active:hover {
+    background-color: #23BE0A;
+    color: #ffffff;
+}
+
+.not-active {
+    background-color: #ffffff;
+    font-weight: 500;
+}
+
+.not-active:hover {
+    background-color: #d5cfcf;
+    border: 2px solid #808080;
+}
+
