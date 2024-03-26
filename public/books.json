@@ -9,9 +9,9 @@
         "rating": 4.5,
         "category": "Fiction",
         "tags": [
-            "Coming-of-age",
             "Racism",
-            "Legal drama"
+            "Legal drama",
+            "Social"
         ],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
@@ -28,7 +28,7 @@
         "tags": [
             "Dystopian",
             "Totalitarianism",
-            "Political satire"
+            "Crime"
         ],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
@@ -43,16 +43,15 @@
         "rating": 4.4,
         "category": "Fiction",
         "tags": [
-            "Roaring Twenties",
             "Social class",
-            "Tragic love story"
+            "Tragic Love story"
         ],
         "publisher": "Charles Scribner's Sons",
         "yearOfPublishing": 1925
     },
     {
         "bookId": 4,
-        "bookName": "Harry Potter and the Philosopher's Stone",
+        "bookName": "Harry Potter",
         "author": "J.K. Rowling",
         "image": "https://i.ibb.co/S7v8spd/1402605-105.jpg",
         "review": "A captivating fantasy adventure that introduces readers to the magical world of Hogwarts.",
@@ -79,7 +78,7 @@
         "tags": [
             "Romance",
             "Regency era",
-            "Social commentary"
+            "Social"
         ],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813

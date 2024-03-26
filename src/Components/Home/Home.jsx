@@ -3,7 +3,7 @@ import Books from "../Books/Books";
 
 const Home = () => {
     return (
-        <div className="mt-7">
+        <div className="mt-7 space-y-14">
             <Banner></Banner>
             <Books></Books>
         </div>
