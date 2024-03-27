@@ -17,35 +17,35 @@ const BookDetails = () => {
     const {bookId, bookName, author, image, review, totalPages, rating,
         category, tags, publisher, yearOfPublishing } = book;
 
-    const handleAddToRead = (id) =>{
+    const handleAddToRead = () =>{
         const storedReadBooks = getStoredBooks("read-books");
-        if (storedReadBooks.includes(id)){
+        if (storedReadBooks.includes(book)){
             toast("Already in read list");
         }
         else{
             toast("Added in read list");
-            saveBooksToStorage("read-books", id);
+            saveBooksToStorage("read-books", book);
         }
     }
 
-    const handleAddToWishlist = (id) =>{
+    const handleAddToWishlist = () =>{
         const storedReadBooks = getStoredBooks("read-books");
         const storedWishBooks = getStoredBooks("wishlist");
-        if (storedReadBooks.includes(id)){
+        if (storedReadBooks.includes(book)){
             toast("Already in read list");
         }
-        else if (storedWishBooks.includes(id)){
+        else if (storedWishBooks.includes(book)){
             toast("Already in wishlist");
         }
         else{
             toast("Added in wishlist");
-            saveBooksToStorage("wishlist",id);
+            saveBooksToStorage("wishlist",book);
         }
     }
 
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img src={image} alt="Album" /></figure>
+            <figure><img  src={image} alt="Album" /></figure>
 
             <div className="card-body">
                 <h2 className="text-3xl play font-bold">{bookName}</h2>
