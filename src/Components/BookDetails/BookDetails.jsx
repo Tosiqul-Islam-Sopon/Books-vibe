@@ -23,7 +23,6 @@ const BookDetails = () => {
         const alreadyStored = storedReadBooks.find(book => book.bookId === boi.bookId);
         const alreadyStoredInWishlist = storedWishBooks.find(book => book.bookId === boi.bookId);
         if (alreadyStored){
-            // toast("Already in read list");
             toast.warning("Already in read list");
         }
         else if (alreadyStoredInWishlist){
@@ -38,7 +37,7 @@ const BookDetails = () => {
             });
         }
         else{
-            toast.success("Already in read list");
+            toast.success("Added in read list");
             saveBooksToStorage("read-books", boi);
         }
     }
@@ -64,7 +63,7 @@ const BookDetails = () => {
         <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure><img className='h-full w-80'  src={image} alt="Album" /></figure>
 
-            <div className="card-body">
+            <div className="card-body p-2 lg:p-5">
                 <h2 className="text-3xl play font-bold">{bookName}</h2>
                 <p>By : {author}</p>
                 <h1 className="border border-gray-200"></h1>
@@ -72,8 +71,8 @@ const BookDetails = () => {
                 <h1 className="border border-gray-200"></h1>
 
                 <p className="work"><span className="font-bold">Review : </span> <span>{review}</span></p>
-                <div className="flex gap-2">
-                    <p className="font-bolt work">Tag</p>
+                <div className="space-y-2 lg:flex lg:gap-2">
+                    <p className="font-bold work">Tag</p>
                     {
                         tags.map((tag, index) => <p key={index} className='text-[#23BE0A] px-2 py-1 rounded-xl bg-gray-100'>#{tag}</p>)
                     }

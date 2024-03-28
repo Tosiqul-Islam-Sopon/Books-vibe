@@ -40,12 +40,11 @@ const RecomendedBook = ({ book }) => {
     }
 
     return (
-        <div className='border border-gray-200 p-5 rounded-2xl'>
-            <h2 className='text-3xl text-center mx-auto p-3 font-bold play mb-5 text-[#23BE0A] border border-gray-200 shadow-xl w-1/2'>{award}</h2>
+        <div className='border border-gray-200 lg:p-5 p-2 rounded-2xl'>
+            <h2 className='text-3xl text-center mx-auto p-3 font-bold play mb-5 text-[#23BE0A] border border-gray-200 shadow-xl lg:w-1/2'>{award}</h2>
             <div className="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img className='h-full w-72' src={image} alt="Album" /></figure>
-
-                <div className="card-body">
+                <div className="card-body p-2 lg:p-5">
                     <h2 className="text-3xl play font-bold">{bookName}</h2>
                     <p>By : {author}</p>
                     <h1 className="border border-gray-200"></h1>
@@ -53,7 +52,7 @@ const RecomendedBook = ({ book }) => {
                     <h1 className="border border-gray-200"></h1>
 
                     <p className="work"><span className="font-bold">Review : </span> <span>{review}</span></p>
-                    <div className="flex gap-2">
+                    <div className="lg:flex lg:gap-2 space-y-2">
                         <p className="font-bolt work">Tag</p>
                         {
                             tags.map((tag, index) => <p key={index} className='text-[#23BE0A] px-2 py-1 rounded-xl bg-gray-100'>#{tag}</p>)

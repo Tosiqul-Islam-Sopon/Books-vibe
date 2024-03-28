@@ -11,7 +11,7 @@ const Navbar = () => {
         <li className="font-semibold"><NavLink to="/PagesToRead" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Pages to Read</NavLink></li>
         <li className="font-semibold"><NavLink to="/RecomendedBooks" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Recomended Books</NavLink></li>
         <li className="font-semibold"><NavLink to="/AuthorSpotlight" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Author Spotlight</NavLink></li>
-        
+
     </>
 
     return (
@@ -23,6 +23,8 @@ const Navbar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {links}
+                        <a className="btn font-semibold lg:mr-2 mb-2 bg-[#23BE0A] text-white">Sign In</a>
+                        <a className="btn font-semibold bg-[#59C6D2] text-white">Sign Up</a>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-2xl font-bold">Books Vibe</a>
@@ -32,7 +34,7 @@ const Navbar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end hidden lg:flex">
                 <a className="btn font-semibold mr-2 bg-[#23BE0A] text-white">Sign In</a>
                 <a className="btn font-semibold bg-[#59C6D2] text-white">Sign Up</a>
             </div>

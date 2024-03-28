@@ -11,14 +11,14 @@ const ReadBook = ({ book }) => {
 
     return (
         <div>
-            <div className="card lg:card-side bg-base-100 shadow-xl p-5">
+            <div className="card lg:card-side bg-base-100 shadow-xl lg:p-5">
                 <figure><img className='h-56 w-48' src={image} alt="Album" /></figure>
-                <div className="card-body space-y-2">
+                <div className="card-body space-y-2 p-2 lg:p-5">
                     <h2 className="card-title play font-bold">{bookName}</h2>
                     <p className='work font-medium'>By : <span>{author}</span></p>
                     <div className="flex flex-col lg:flex-row gap-2">
-                        <div className='flex'>
-                            <p className="font-bolt work font-bold">Tag</p>
+                        <div className='space-y-2 lg:flex lg:gap-2'>
+                            <p className="work font-bold">Tag</p>
                             {
                                 tags.map((tag, index) => <p key={index} className='text-[#23BE0A] px-2 py-1 rounded-xl bg-gray-100 work font-medium'>#{tag}</p>)
                             }

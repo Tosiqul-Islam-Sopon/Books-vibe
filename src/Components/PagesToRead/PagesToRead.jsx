@@ -1,6 +1,6 @@
 
 import { getStoredBooks } from "../Utility/LocalStorage";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Cell, ResponsiveContainer } from 'recharts';
 import PropTypes from 'prop-types';
 
 const PagesToRead = () => {
@@ -31,18 +31,20 @@ const PagesToRead = () => {
     };
 
     return (
-        <div className="flex justify-center items-center mt-10">
-            <BarChart width={1000} height={350} data={readBooks}>
-                <XAxis dataKey="bookName" tick={renderCustomAxisTick} />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />}>
-                    {readBooks.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-                    ))}
-                </Bar>
-            </BarChart>
-        </div>
+        <ResponsiveContainer>
+            <div className="flex justify-center items-center mt-10">
+                <BarChart width={1000} height={350} data={readBooks}>
+                    <XAxis dataKey="bookName" tick={renderCustomAxisTick} />
+                    <YAxis />
+                    <Tooltip />
+                    <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />}>
+                        {readBooks.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                        ))}
+                    </Bar>
+                </BarChart>
+            </div>
+        </ResponsiveContainer>
     );
 };
 
