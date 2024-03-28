@@ -18,7 +18,7 @@ const RecomendedBooks = () => {
     });
     console.log(recomendedBooks);
     return (
-        <div className="space-y-10">
+        <div className="space-y-10 mt-10">
             {
                 recomendedBooks.map(book => <RecomendedBook key={book.bookId} book={book}></RecomendedBook>)
             }

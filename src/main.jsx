@@ -12,6 +12,7 @@ import ListedBooks from './Components/ListedBooks/ListedBooks';
 import PagesToRead from './Components/PagesToRead/PagesToRead';
 import BookDetails from './Components/BookDetails/BookDetails';
 import RecomendedBooks from './Components/RecomendedBooks/RecomendedBooks';
+import AuthorSpotlight from './Components/AuthorSpotlight/AuthorSpotlight';
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/AuthorSpotlight",
-        element: <PagesToRead></PagesToRead>
+        element: <AuthorSpotlight></AuthorSpotlight>
       },
       {
         path: '/BookDetails/:id',

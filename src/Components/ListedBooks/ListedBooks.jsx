@@ -49,7 +49,7 @@ const ListedBooks = () => {
 
     return (
         <div>
-            <h2 className='bg-[#1313130D] text-center py-6 text-3xl work font-bold'>Books</h2>
+            <h2 className='bg-[#1313130D] text-center py-6 text-3xl work font-bold rounded-2xl'>Books</h2>
             <div className="flex justify-center my-8">
                 <div className="dropdown" >
                     <div tabIndex={0} role="button" className="btn m-1 bg-[#23BE0A] text-white font-medium" onClick={toggleDropdown}>Sort by <img src={down} alt="" /></div>
@@ -62,7 +62,7 @@ const ListedBooks = () => {
             </div>
             <div role="tablist" className="tabs tabs-lifted">
                 <input type="radio" name="my_tabs_2" role="tab" className="tab" aria-label="Read Books" checked={activeTab === "read-books"} onChange={() => setActiveTab("read-books")} />
-                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-2">
                     <div className="space-y-2">
                         {readBooks.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)}
                     </div>

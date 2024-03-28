@@ -30,8 +30,8 @@ const PagesToRead = () => {
     };
 
     return (
-        <div className="flex justify-center items-center mt-20">
-            <BarChart width={600} height={300} data={readBooks}>
+        <div className="flex justify-center items-center mt-10">
+            <BarChart width={1000} height={350} data={readBooks}>
                 <XAxis dataKey="bookName" tick={renderCustomAxisTick} />
                 <YAxis />
                 <Tooltip />
