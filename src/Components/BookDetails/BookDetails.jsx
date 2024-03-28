@@ -48,7 +48,7 @@ const BookDetails = () => {
 
     return (
         <div className="card lg:card-side bg-base-100 shadow-xl">
-            <figure><img  src={image} alt="Album" /></figure>
+            <figure><img className='h-full w-80'  src={image} alt="Album" /></figure>
 
             <div className="card-body">
                 <h2 className="text-3xl play font-bold">{bookName}</h2>

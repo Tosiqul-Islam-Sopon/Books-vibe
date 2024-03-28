@@ -9,6 +9,8 @@ const Navbar = () => {
         <li className="font-semibold"><NavLink to="/" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Home</NavLink></li>
         <li className="font-semibold"><NavLink to="/ListedBooks" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Listed Books</NavLink></li>
         <li className="font-semibold"><NavLink to="/PagesToRead" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Pages to Read</NavLink></li>
+        <li className="font-semibold"><NavLink to="/RecomendedBooks" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Recomended Books</NavLink></li>
+        <li className="font-semibold"><NavLink to="/AuthorSpotlight" className={({ isActive }) => (isActive ? 'is-active' : 'not-active')}>Author Spotlight</NavLink></li>
         
     </>
 
@@ -31,7 +33,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn font-semibold mr-4 bg-[#23BE0A] text-white">Sign In</a>
+                <a className="btn font-semibold mr-2 bg-[#23BE0A] text-white">Sign In</a>
                 <a className="btn font-semibold bg-[#59C6D2] text-white">Sign Up</a>
             </div>
         </div>

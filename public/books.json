@@ -14,7 +14,8 @@
             "Social"
         ],
         "publisher": "J. B. Lippincott & Co.",
-        "yearOfPublishing": 1960
+        "yearOfPublishing": 1960,
+        "award": "Best Scocial Book"
     },
     {
         "bookId": 2,
@@ -31,7 +32,8 @@
             "Crime"
         ],
         "publisher": "Secker & Warburg",
-        "yearOfPublishing": 1949
+        "yearOfPublishing": 1949,
+        "award": "Best Book in Crime"
     },
     {
         "bookId": 3,
@@ -47,7 +49,8 @@
             "Tragic Love story"
         ],
         "publisher": "Charles Scribner's Sons",
-        "yearOfPublishing": 1925
+        "yearOfPublishing": 1925,
+        "award": "Best Love Story Book"
     },
     {
         "bookId": 4,
@@ -64,7 +67,8 @@
             "Wizardry"
         ],
         "publisher": "Bloomsbury",
-        "yearOfPublishing": 1997
+        "yearOfPublishing": 1997,
+        "award": ""
     },
     {
         "bookId": 5,
@@ -81,7 +85,8 @@
             "Social"
         ],
         "publisher": "T. Egerton, Whitehall",
-        "yearOfPublishing": 1813
+        "yearOfPublishing": 1813,
+        "award": ""
     },
     {
         "bookId": 6,
@@ -98,6 +103,7 @@
             "Identity"
         ],
         "publisher": "Little, Brown and Company",
-        "yearOfPublishing": 1951
+        "yearOfPublishing": 1951,
+        "award": ""
     }
 ]

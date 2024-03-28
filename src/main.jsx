@@ -11,6 +11,7 @@ import Home from './Components/Home/Home';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import PagesToRead from './Components/PagesToRead/PagesToRead';
 import BookDetails from './Components/BookDetails/BookDetails';
+import RecomendedBooks from './Components/RecomendedBooks/RecomendedBooks';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
       },
       {
         path: "/PagesToRead",
+        element: <PagesToRead></PagesToRead>
+      },
+      {
+        path: "/RecomendedBooks",
+        element: <RecomendedBooks></RecomendedBooks>
+      },
+      {
+        path: "/AuthorSpotlight",
         element: <PagesToRead></PagesToRead>
       },
       {
