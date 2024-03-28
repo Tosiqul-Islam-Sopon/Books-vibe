@@ -2,10 +2,11 @@ import PropTypes from 'prop-types';
 import loaction from '../../assets/Images/loaction.png'
 import publisherIcon from '../../assets/Images/publisher.png'
 import pages from '../../assets/Images/pages.png'
+import { Link } from 'react-router-dom';
 
 const ReadBook = ({ book }) => {
 
-    const { bookName, author, image, totalPages, rating,
+    const { bookId, bookName, author, image, totalPages, rating,
         category, tags, publisher, yearOfPublishing } = book;
 
     return (
@@ -30,7 +31,7 @@ const ReadBook = ({ book }) => {
                     <div className='flex items-center gap-4 work'>
                         <h2 className='bg-[#328EFF26] p-3 rounded-xl text-[#328EFF]'>Catagory: {category}</h2>
                         <h2 className='bg-[#FFAC3326] p-3 rounded-xl text-[#FFAC33]'>Rating: {rating}</h2>
-                        <button className='btn bg-[#23BE0A] text-white'>View Details</button>
+                        <Link to={`/BookDetails/${bookId}`}><button className='btn bg-[#23BE0A] text-white'>View Details</button></Link>
                     </div>
                 </div>
             </div>
