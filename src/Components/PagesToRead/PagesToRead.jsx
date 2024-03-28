@@ -1,10 +1,11 @@
 
 import { getStoredBooks } from "../Utility/LocalStorage";
-import { BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Cell } from 'recharts';
 import PropTypes from 'prop-types';
 
 const PagesToRead = () => {
     const readBooks = getStoredBooks("read-books");
+    const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
     const renderCustomAxisTick = ({ x, y, payload }) => {
         return (
@@ -35,7 +36,11 @@ const PagesToRead = () => {
                 <XAxis dataKey="bookName" tick={renderCustomAxisTick} />
                 <YAxis />
                 <Tooltip />
-                <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} />
+                <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />}>
+                    {readBooks.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                    ))}
+                </Bar>
             </BarChart>
         </div>
     );

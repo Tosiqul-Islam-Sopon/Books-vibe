@@ -14,10 +14,10 @@ const RecomendedBook = ({ book }) => {
         const storedReadBooks = getStoredBooks("read-books");
         const alreadyStored = storedReadBooks.find(book => book.bookId === boi.bookId);
         if (alreadyStored) {
-            toast("Already in read list");
+            toast.warning("Already in read list");
         }
         else {
-            toast("Added in read list");
+            toast.success("Added in read list");
             saveBooksToStorage("read-books", boi);
         }
     }
@@ -28,13 +28,13 @@ const RecomendedBook = ({ book }) => {
         const alreadyStoredInRead = storedReadBooks.find(book => book.bookId === boi.bookId);
         const alreadyStoredInWishlist = storedWishBooks.find(book => book.bookId === boi.bookId);
         if (alreadyStoredInRead) {
-            toast("Already in read list");
+            toast.warning("Already in read list");
         }
         else if (alreadyStoredInWishlist) {
-            toast("Already in wishlist");
+            toast.warning("Already in wishlist");
         }
         else {
-            toast("Added in wishlist");
+            toast.success("Added in wishlist");
             saveBooksToStorage("wishlist", boi);
         }
     }
