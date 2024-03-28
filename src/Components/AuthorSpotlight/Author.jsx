@@ -4,11 +4,10 @@ const Author = ({ author }) => {
 
     const { name, bio, imageUrl, popularWorks } = author;
     return (
-        <div className="card card-side bg-base-100 shadow-xl p-5 border border-gray-200 hover:shadow-lg">
-            <div className="card-body">
+        <div className="flex flex-col-reverse lg:flex-row rounded-2xl bg-base-100 shadow-xl p-5 border border-gray-200 hover:shadow-lg">
+            <div className="card-body space-y-3">
                 <h2 className="text-3xl font-bold play">{name}</h2>
                 <p><span className='font-bold work text-xl'>Bio:</span> {bio}</p>
-
                 <div>
                     <div className="flex items-center gap-3">
                         <h2 className='text-xl font-bold'>Featured Works:</h2>
@@ -18,7 +17,7 @@ const Author = ({ author }) => {
                     </div>
                 </div>
             </div>
-            <figure><img className='h-full w-[400px]' src={imageUrl} alt="Movie" /></figure>
+            <figure><img className='h-full w-[400px] rounded-xl' src={imageUrl} alt="Movie" /></figure>
         </div>
     );
 };
